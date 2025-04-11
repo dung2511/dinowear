@@ -8,7 +8,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 // MongoDB
-mongoose.connect(process.env.MONGOURI, {
+mongoose.connect("mongodb+srv://dinowear_dev:ntaddev2511@dinowear.vkxcy.mongodb.net/dinowear_dev?retryWrites=true&w=majority&appName=DinoWear", {
     useFindAndModify: false,
     useCreateIndex: false,
 })
