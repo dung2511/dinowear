@@ -6,9 +6,9 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-
+const mongoURI = process.env.MONGOURI;
 // MongoDB
-mongoose.connect("mongodb+srv://dinowear_dev:ntaddev2511@dinowear.vkxcy.mongodb.net/dinowear_dev?retryWrites=true&w=majority&appName=DinoWear", {
+mongoose.connect("mongoURI", {
     useFindAndModify: false,
     useCreateIndex: false,
 })
